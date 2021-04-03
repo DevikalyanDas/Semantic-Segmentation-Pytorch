@@ -26,7 +26,7 @@ Every scripts ran in docker container. PyTorch and Torchvision needs to be insta
 I have performed the task of semantic segmentation on images from the CityScapes dataset. To go about this task, U-Net, R2U-Net and Dilated U-Net architectures (More will be added) to compare performances. The metrics I have used is Accuracy(Acc), Sensitivity(SE), Specificity(SP), Dice coeffcient(DSC) and IOU (intersection over union).  
 Most of the classes in Cityscapes Dataset out of 30 are void and only 19 classes are available. So, 19 classes were used for training and inference. For training and inference purpose, the dataset was resized to 256 X 256 with a batch size of 8 for models was considered. The dataset has 2975 training and 500 validation images. The validation dataset was used for testing purpose. For, the implementation Pytorch framework was used on multiple GPU clusters (8 Nvidia Tesla V100 GPUs) depending on availability. The models were trained for 200 epochs and the weights were saved after every epochs. The evaluation was performed after each epoch. For the training, Cross-Entropy loss and ADAM optimizer was considered.The performance of Loss for various models during training and validation are illustrated in Figures  
 The tranformations which are applied to the training images are random horizontal flip, random rotate (step of 90 deg.) and normalization. The test and validation images are only normalized.
-The metrices
+The reported scores are computed considering micro levels.
 ## Models Used
 
 | R2U-Net     | Unet        | DDU-Net (self-designed)    |
@@ -40,16 +40,15 @@ The metrices
     * Also, you can adjust epochs, change optimizers.
     * For training, run ```python3 main_r2unet.py``` and the training will start.
     * For inferencing and visualizing the masks, use ```Inference_output_r2unet.ipynb```
-* for DDU-Net
-  in ```main_ddunet.py```
-    * Set the path for the dataset, logs save and checkpoints
-    * Also, you can adjust epochs, change optimizers.
-    * For training, run ```python3 main_r2unet.py``` and the training will start.
-    * For inferencing and visualizing the masks, use ```Inference_output_dduunet.ipynb```    
 * for U-Net
   in ```main_unet.py```
     * Set the path for the dataset, logs save and checkpoints
     * Also, you can adjust epochs, change optimizers.
     * For training, run ```python3 main_unet.py``` and the training will start.
     * For inferencing and visualizing the masks, use ```Inference_output_unet.ipynb```
-
+* for DDU-Net
+  in ```main_ddunet.py```
+    * Set the path for the dataset, logs save and checkpoints
+    * Also, you can adjust epochs, change optimizers.
+    * For training, run ```python3 main_r2unet.py``` and the training will start.
+    * For inferencing and visualizing the masks, use ```Inference_output_dduunet.ipynb```    
