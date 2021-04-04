@@ -56,11 +56,11 @@ The reported scores are computed considering micro levels.
 ## Metrice Scores
 | Metrices    |    Unet     |    R2U-Net  |   DDU-Net   |
 | ----------- | ----------- | ----------- | ----------- | 
-|Accuracy     |             |             |             |
-|Dice         |             |             |             |
-|IOU          |             |             |             |
-|Sensitivity  |             |             |             |
-|Specificity  |             |             |             |
+|Accuracy     |  0.9899     |   0.9871    | 0.9885      |
+|Dice         |  0.9017     |   0.871     |   0.8878    |
+|IOU          |  0.8215     |   0.7722    |   0.7985    |
+|Sensitivity  |  0.8797     |   0.8296    |    0.8637   |
+|Specificity  |    0.996    |   0.9958    |  0.9954     |
 
 ## Parameters
 
@@ -89,7 +89,7 @@ The reported scores are computed considering micro levels.
 ## Segmented Output
 | Input      |   Label | U-Net | R2U-Net  | DDU-Net | 
 |------------|---------|-------|----------|---------| 
-|      | 0 | 0| 0  |                   |
-|      | 0 | 0| 0  |                   |
-|      | 0 | 0| 0  |                   |
-|      | 0 | 0| 0  |                   |
+|   0   | 0 | 0| 0  |         0          |
+|   0   | 0 | 0| 0  |        0           |
+|   0   | 0 | 0| 0  |         0          |
+|   0   | 0 | 0| 0  |        0           |
