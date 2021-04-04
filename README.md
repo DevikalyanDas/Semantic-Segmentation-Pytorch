@@ -89,7 +89,7 @@ The reported scores are computed considering micro levels.
 ## Segmented Output
 | Input      |   Label | U-Net | R2U-Net  | DDU-Net | 
 |------------|---------|-------|----------|---------| 
-|   0   | 0 | 0| 0  |         0          |
+| <img src="sample_imgs/img1/img1.png" width="200" height="200">   | <img src="sample_imgs/img1/mask1.png" width="200" height="200"> | 0| 0  |         0          |
 |   0   | 0 | 0| 0  |        0           |
 |   0   | 0 | 0| 0  |         0          |
 |   0   | 0 | 0| 0  |        0           |
