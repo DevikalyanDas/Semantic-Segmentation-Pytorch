@@ -1,0 +1,11 @@
+opencv-python==3.3.0.9
+pandas
+matplotlib
+statistics
+numpy
+torch
+torchvision
+torch-summary
+tqdm
+warn
+times
