@@ -39,7 +39,7 @@ val_loader = data.DataLoader(dst_val, batch_size=bs, num_workers=0,shuffle=True)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = M_Unet(n_class=19)
 model.apply(init_weights)
-#model = torch.nn.DataParallel(model,device_ids=[0,1,2,3,4])
+model = torch.nn.DataParallel(model,device_ids=[0,1,2,3,4])
 model = model.to(device)
 
 #summary(model, (3, 256, 256))
