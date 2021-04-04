@@ -52,3 +52,44 @@ The reported scores are computed considering micro levels.
     * Also, you can adjust epochs, change optimizers.
     * For training, run ```python3 main_r2unet.py``` and the training will start.
     * For inferencing and visualizing the masks, use ```Inference_output_dduunet.ipynb```    
+
+## Metrice Scores
+| Metrices    |    Unet     |    R2U-Net  |   DDU-Net   |
+| ----------- | ----------- | ----------- | ----------- | 
+|Accuracy     |             |             |             |
+|Dice         |             |             |             |
+|IOU          |             |             |             |
+|Sensitivity  |             |             |             |
+|Specificity  |             |             |             |
+
+## Parameters
+
+| Models      |   Parameters (in Million) |   
+| ----------- | ------------------------- | 
+|U-Net        | 31.39                     |
+|R2U-Net      | 80.94                     |
+|DDU-Net      | 10.81                     |
+
+
+## Various Plots
+ * Loss Plots
+ ![plot_loss](https://user-images.githubusercontent.com/14145901/113505084-f66f5580-953c-11eb-89a2-27e1f01b681b.png)
+
+ * Accuracy
+ ![plot_accuracy](https://user-images.githubusercontent.com/14145901/113505097-16067e00-953d-11eb-9aac-7afc611b7177.png)
+ * Dice
+ ![plot_dice](https://user-images.githubusercontent.com/14145901/113505106-1dc62280-953d-11eb-90d7-890b3122bdeb.png)
+ * IOU
+ ![plot_iou](https://user-images.githubusercontent.com/14145901/113505114-23bc0380-953d-11eb-85f8-a0fff85d9914.png)
+ * Sensitivity
+ ![plot_sens](https://user-images.githubusercontent.com/14145901/113505134-41896880-953d-11eb-96d7-b919116a051d.png)
+ * Specificity 
+ ![plot_spec](https://user-images.githubusercontent.com/14145901/113505118-29b1e480-953d-11eb-9ef6-208815a2c522.png)
+
+## Segmented Output
+| Input      |   Label | U-Net | R2U-Net  | DDU-Net | 
+|------------|---------|-------|----------|---------| 
+|      | 0 | 0| 0  |                   |
+|      | 0 | 0| 0  |                   |
+|      | 0 | 0| 0  |                   |
+|      | 0 | 0| 0  |                   |
