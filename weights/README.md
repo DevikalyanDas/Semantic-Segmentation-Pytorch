@@ -2,4 +2,4 @@
 
 * U-Net
 * R2U-Net
-* DDU-Net ![Link]https://drive.google.com/file/d/1bMp7Dk53gxiaNO75PkWRPvT7Cc7xHose/view?usp=sharing
+* DDU-Net ![Link](https://drive.google.com/file/d/1bMp7Dk53gxiaNO75PkWRPvT7Cc7xHose/view?usp=sharing)
