@@ -1,1 +1,1 @@
-## Here is some sample images and the segmented mask
+## Here are some sample images and the segmented mask
